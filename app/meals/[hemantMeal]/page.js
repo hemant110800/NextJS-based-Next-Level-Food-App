@@ -1,5 +1,5 @@
 import classes from "./page.module.css";
-import Image from "next/Image";
+import Image from "next/image";
 import { getMeal } from "@/lib/meals";
 
 export default function MealDynamic({ params }) {

@@ -6,7 +6,9 @@ import {Suspense} from 'react';
 import styles from './loading.module.css';
 
 async function Meals(){
-    const meals = await getMeals();
+    var meals = await getMeals();
+    meals = meals.filter((m)=>m.id!=9 && m.id!=8);
+    // console.log(meals);
     return <MealsGrid meals={meals}></MealsGrid>;
 }
 
